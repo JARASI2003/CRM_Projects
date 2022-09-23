@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>WeConnect</title>
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/icons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/icons/favicon-16x16.png">
+    <link rel="manifest" href="/icons/site.webmanifest">
+    <link rel="mask-icon" href="/icons/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="shortcut icon" href="/icons/favicon.ico">
+    <meta name="msapplication-TileColor" content="#2d89ef">
+    <meta name="msapplication-config" content="/icons/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
+
+    <link href="../weconnect.css" rel="stylesheet">
+
+    <link href="../dark_extra.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="dashboard.css" />
+    
+    
+    
+    
+</head>
+
+<body class="fixed-nav ">
+<section>
+    <div id="wrapper">
+        <nav class="navbar-default navbar-static-side" role="navigation">
+            <div class="sidebar-collapse">
+
+                <ul class="nav" id="side-menu">
+
+    <li class="nav-header">
+        <div class="dropdown profile-element"> <span>
+
+            <img src="/Transcations/icons/default-user-avatar.png"  class="img-circle" style="max-width: 64px;" alt="">
+                                                             </span>
+            <a data-toggle="dropdown" class="dropdown-toggle" href="#" aria-expanded="false">
+                            <span class="clear"> <span class="block m-t-xs"> <strong class="font-bold">Administrator</strong>
+                             </span> <span class="text-muted text-xs block">My Account <b class="caret"></b></span> </span> </a>
+            <ul class="dropdown-menu animated fadeIn m-t-xs">
+                <li><a href="http://localhost/ibilling/?ng=settings/users-edit/1/">Edit Profile</a></li>
+                <li><a href="http://localhost/ibilling/?ng=settings/change-password/">Change Password</a></li>
+
+                <li class="divider"></li>
+                <li><a href="http://localhost/ibilling/?ng=logout/">Logout</a></li>
+            </ul>
+        </div>
+    </li>
+
+    
+
+            <li ><a href="http://localhost/ibilling/?ng=dashboard/"><i class="fa fa-tachometer"></i> <span class="nav-label">Dashboard</span></a></li>
+    
+
+
+
+    
+
+        <li class="">
+        <a href="#"><i class="icon-users"></i> <span class="nav-label">Customers</span><span class="fa arrow"></span></a>
+        <ul class="nav nav-second-level">
+            <li><a href="http://localhost/ibilling/?ng=contacts/add/">Add Customer</a></li>
+
+            <li><a href="http://localhost/ibilling/?ng=contacts/list/">List Customers</a></li>
+            <li><a href="http://localhost/ibilling/?ng=contacts/groups/">Groups</a></li>
+                    </ul>
+    </li>
+    
+
+        <li ><a href="http://localhost/ibilling/?ng=contacts/companies/"><i class="fa fa-building-o"></i> <span class="nav-label">Companies</span></a></li>
+    
+
+
+
+    
+                        <li class="active">
+                <a href="#"><i class="fa fa-database"></i> <span class="nav-label">Transactions</span><span class="fa arrow"></span></a>
+                <ul class="nav nav-second-level">
+                    <li><a href="">New Deposit</a></li>
+                    <li><a href="">New Expense</a></li>
+                    <li><a href="">Transfer</a></li>
+                    <li><a href="">View Transactions</a></li>
+                    <li><a href="">Balance Sheet</a></li>
+                </ul>
+            </li>
+
+            <!-- <li class="active">
+                <a href="#"><i class="fa fa-database"></i> <span class="nav-label">Transactions</span><span class="fa arrow"></span></a>
+                <ul class="nav nav-second-level">
+                    <li><a href="http://localhost/ibilling/?ng=transactions/deposit/">New Deposit</a></li>
+                    <li><a href="http://localhost/ibilling/?ng=transactions/expense/">New Expense</a></li>
+                    <li><a href="http://localhost/ibilling/?ng=transactions/transfer/">Transfer</a></li>
+                    <li><a href="http://localhost/ibilling/?ng=transactions/list/">View Transactions</a></li>
+                    <li><a href="http://localhost/ibilling/?ng=generate/balance-sheet/">Balance Sheet</a></li>
+                </ul>
+            </li> -->
+            
+            
+
+    
+
+
+    
+        
+
+
+            <li class="">
+                <a href="#"><i class="icon-credit-card-1"></i> <span class="nav-label">Sales</span><span class="fa arrow"></span></a>
+                <ul class="nav nav-second-level">
+
+                                            <li><a href="http://localhost/ibilling/?ng=invoices/list/">Invoices</a></li>
+                        <li><a href="http://localhost/ibilling/?ng=invoices/add/">New Invoice</a></li>
+                        <li><a href="http://localhost/ibilling/?ng=invoices/list-recurring/">Recurring Invoices</a></li>
+                        <li><a href="http://localhost/ibilling/?ng=invoices/add/recurring/">New Recurring Invoice</a></li>
+                    
+                                            <li><a href="http://localhost/ibilling/?ng=quotes/list/">Quotes</a></li>
+                        <li><a href="http://localhost/ibilling/?ng=quotes/new/">Create New Quote</a></li>
+                                        <li><a href="http://localhost/ibilling/?ng=invoices/payments/">Payments</a></li>
+                </ul>
+            </li>
+
+        
+    
+
+
+    
+        
+
+
+            <li class="">
+                <a href="#"><i class="fa fa-server"></i> <span class="nav-label">Orders</span><span class="fa arrow"></span></a>
+                <ul class="nav nav-second-level">
+                    <li><a href="http://localhost/ibilling/?ng=orders/list/">List All Orders</a></li>
+                    <li><a href="http://localhost/ibilling/?ng=orders/add/">Add New Order</a></li>
+
+                </ul>
+            </li>
+
+        
+    
+
+
+            <li ><a href="http://localhost/ibilling/?ng=documents/"><i class="fa fa-file-o"></i> <span class="nav-label">Documents</span></a></li>
+    
+            <li ><a href="http://localhost/ibilling/?ng=calendar/events/"><i class="fa fa-calendar"></i> <span class="nav-label">Calendar</span></a></li>
+    
+
+
+    
+
+                        <li class="">
+                <a href="#"><i class="fa fa-university"></i> <span class="nav-label">Bank & Cash</span><span class="fa arrow"></span></a>
+                <ul class="nav nav-second-level">
+                    <li><a href="http://localhost/ibilling/?ng=accounts/add/">New Account</a></li>
+
+                    <li><a href="http://localhost/ibilling/?ng=accounts/list/">List Accounts</a></li>
+                    <li><a href="http://localhost/ibilling/?ng=accounts/balances/">Account Balances</a></li>
+
+                </ul>
+            </li>
+        
+    
+
+    
+
+    
+            <li class="">
+            <a href="#"><i class="fa fa-cube"></i> <span class="nav-label">Products & Services</span><span class="fa arrow"></span></a>
+            <ul class="nav nav-second-level">
+                <li><a href="http://localhost/ibilling/?ng=ps/p-list/">Products</a></li>
+                <li><a href="http://localhost/ibilling/?ng=ps/p-new/">New Product</a></li>
+                <li><a href="http://localhost/ibilling/?ng=ps/s-list/">Services</a></li>
+                <li><a href="http://localhost/ibilling/?ng=ps/s-new/">New Service</a></li>
+
+
+            </ul>
+        </li>
+    
+    
+
+    
+
+    
+            
+            <li class="">
+            <a href="#"><i class="fa fa-bar-chart-o"></i> <span class="nav-label">Reports </span><span class="fa arrow"></span></a>
+            <ul class="nav nav-second-level">
+
+
+                <li><a href="http://localhost/ibilling/?ng=reports/statement/">Account Statement</a></li>
+                <li><a href="http://localhost/ibilling/?ng=reports/income/">Income Reports</a></li>
+                <li><a href="http://localhost/ibilling/?ng=reports/expense/">Expense Reports</a></li>
+                <li><a href="http://localhost/ibilling/?ng=reports/income-vs-expense/">Income Vs Expense</a></li>
+
+                <li><a href="http://localhost/ibilling/?ng=reports/by-date/">Reports by Date</a></li>
+                                <li><a href="http://localhost/ibilling/?ng=transactions/list-income/">All Income</a></li>
+                <li><a href="http://localhost/ibilling/?ng=transactions/list-expense/">All Expense</a></li>
+                <li><a href="http://localhost/ibilling/?ng=transactions/list/">All Transactions</a></li>
+
+
+                
+
+            </ul>
+            </li>
+
+        
+    
+    
+        <li class="">
+            <a href="#"><i class="icon-article"></i> <span class="nav-label">Utilities </span><span class="fa arrow"></span></a>
+            <ul class="nav nav-second-level">
+                <li><a href="http://localhost/ibilling/?ng=util/activity/">Activity Log</a></li>
+                <li><a href="http://localhost/ibilling/?ng=util/sent-emails/">Email Message Log</a></li>
+                <li><a href="http://localhost/ibilling/?ng=util/dbstatus/">Database Status</a></li>
+                <li><a href="http://localhost/ibilling/?ng=util/cronlogs/">CRON Log</a></li>
+                <li><a href="http://localhost/ibilling/?ng=util/integrationcode/">Integration Code</a></li>
+                <li><a href="http://localhost/ibilling/?ng=util/sys_status/">System Status</a></li>
+            </ul>
+        </li>
+
+    
+
+    
+        <li class="" id="li_appearance">
+            <a href="#"><i class="icon-params"></i> <span class="nav-label">Appearance </span><span class="fa arrow"></span></a>
+            <ul class="nav nav-second-level">
+
+                <li><a href="http://localhost/ibilling/?ng=appearance/ui/">User Interface</a></li>
+                <li><a href="http://localhost/ibilling/?ng=appearance/customize/">Customize</a></li>
+
+                
+                <li><a href="http://localhost/ibilling/?ng=appearance/editor/">Editor</a></li>
+
+                <li><a href="http://localhost/ibilling/?ng=appearance/themes/">Themes</a></li>
+
+            </ul>
+        </li>
+
+
+            <li ><a href="http://localhost/ibilling/?ng=settings/plugins/"><i class="fa fa-plug"></i> <span class="nav-label">Plugins</span></a></li>
+                <li class="" id="li_settings">
+            <a href="#"><i class="fa fa-cogs"></i> <span class="nav-label">Settings </span><span class="fa arrow"></span></a>
+            <ul class="nav nav-second-level">
+                <li><a href="http://localhost/ibilling/?ng=settings/app/">General Settings</a></li>
+                <li><a href="http://localhost/ibilling/?ng=settings/users/">Staff</a></li>
+                <li><a href="http://localhost/ibilling/?ng=settings/roles/">Roles</a></li>
+
+                <li><a href="http://localhost/ibilling/?ng=settings/localisation/">Localization</a></li>
+                <li><a href="http://localhost/ibilling/?ng=settings/currencies/">Currencies</a></li>
+
+                <li><a href="http://localhost/ibilling/?ng=settings/pg/">Payment Gateways</a></li>
+
+                                    <li><a href="http://localhost/ibilling/?ng=settings/expense-categories/">Expense Categories</a></li>
+                    <li><a href="http://localhost/ibilling/?ng=settings/income-categories/">Income Categories</a></li>
+                    <li><a href="http://localhost/ibilling/?ng=settings/tags/">Manage Tags</a></li>
+                    <li><a href="http://localhost/ibilling/?ng=settings/pmethods/">Payment Methods</a></li>
+                    <li><a href="http://localhost/ibilling/?ng=tax/list/">Sales Taxes</a></li>
+                
+
+                <li><a href="http://localhost/ibilling/?ng=settings/emls/">Email Settings</a></li>
+                <li><a href="http://localhost/ibilling/?ng=settings/email-templates/">Email Templates</a></li>
+                <li><a href="http://localhost/ibilling/?ng=settings/customfields/">Custom Contact Fields</a></li>
+                <li><a href="http://localhost/ibilling/?ng=settings/automation/">Automation Settings</a></li>
+                <li><a href="http://localhost/ibilling/?ng=settings/api/">API Access</a></li>
+                                <li><a href="http://localhost/ibilling/?ng=settings/features/">Choose Features</a></li>
+            </ul>
+            </li>
+    
+
+
+
+</ul>
+
+            </div>
+        </nav>
+        <div id="page-wrapper" class="gray-bg">
+            <div class="row border-bottom">
+                <nav class="navbar navbar-fixed-top white-bg" role="navigation" style="margin-bottom: 0">
+
+                    <img class="logo" style="max-height: 40px; width: auto;" src="/Transcations/icons/logo.png" alt="Logo">
+                    <div class="navbar-header">
+                        <a class="navbar-minimalize minimalize-styl-2 btn btn-primary btn-flat" href="#"><i class="fa fa-dedent"></i> </a>
+
+                    </div>
+                    <ul class="nav navbar-top-links navbar-right pull-right">
+
+
+
+                        <li class="hidden-xs">
+                            <form class="navbar-form full-width" method="post" action="http://localhost/ibilling/?ng=contacts/list/">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" name="name" placeholder="Search Customers...">
+                                    <button type="submit" class="btn btn-search"><i class="fa fa-search"></i></button>
+                                </div>
+                            </form>
+                        </li>
+
+
+
+
+                        
+                            <li class="dropdown">
+                                <a class="dropdown-toggle count-info" data-toggle="dropdown" id="get_activity" href="#" aria-expanded="true">
+                                    <i class="fa fa-bell"></i>
+                                </a>
+
+                                <ul class="dropdown-menu dropdown-alerts" id="activity_loaded">
+
+
+
+                                    <li id="activity_wait">
+                                        <div class="text-center link-block">
+                                            <a href="javascript:void(0)">
+                                                <strong>Please Wait...</strong> <br> <br>
+                                                <img class="text-center" src="/Transcations/icons/download.gif" alt="Loading....">
+
+                                            </a>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </li>
+
+
+                        
+
+
+                        <li class="dropdown navbar-user">
+
+                            <a href="javascript:;" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="true">
+
+                                <img src="/Transcations/icons/default-user-avatar (2).png" alt="">
+                                
+                                <span class="hidden-xs">Welcome Administrator</span> <b class="caret"></b>
+                            </a>
+                            <ul class="dropdown-menu animated fadeIn">
+                                <li class="arrow"></li>
+                                <li><a href="http://localhost/ibilling/?ng=settings/users-edit/1/">Edit Profile</a></li>
+                                <li><a href="http://localhost/ibilling/?ng=settings/change-password/">Change Password</a></li>
+                                <li class="divider"></li>
+                                <li><a href="http://localhost/ibilling/?ng=logout/">Logout</a></li>
+
+                            </ul>
+                        </li>
+
+                        <li>
+                            <a class="right-sidebar-toggle">
+                                <i class="fa fa-tasks"></i>
+                            </a>
+                        </li>
+
+
+
+
+                    </ul>
+
+                </nav>
+            </div>
+
+            <div class="row wrapper white-bg page-heading">
+                <div class="col-lg-12">
+                    <h2 style="color: #2F4050; font-size: 16px; font-weight: 400; margin-top: 18px"> Transactions<div class="btn-group pull-right" style="padding-right: 10px;">
+  <a class="btn btn-success btn-xs" href="http://localhost/ibilling/?ng=transactions/export_csv/" style="box-shadow: none;"><i class="fa fa-download"></i></a>
+</div> </h2>
+
+                </div>
+
+            </div>
+
+            <div class="wrapper wrapper-content animated fadeIn">
+                
+                
+
+    <div class="row">
+        <div class="col-lg-12 col-md-12 col-sm-12">
+            <div class="ibox float-e-margins">
+                <div class="ibox-title">
+                    <h5>Records 0. Page 1 of 0. </h5>
+
+                </div>
+                <div class="ibox-content">
+                    <div class="table-responsive">
+                        <table class="table table-bordered sys_table">
+                            <th>Date</th>
+                            <th>Account</th>
+                            <th>Type</th>
+
+                            <th class="text-right">Amount</th>
+
+                            <th>Description</th>
+                            <th class="text-right">Dr.</th>
+                            <th class="text-right">Cr.</th>
+                            <th class="text-right">Balance</th>
+                            <th>Manage</th>
+                            
+
+
+                        </table>
+                    </div>
+
+
+                </div>
+            </div>
+            
+        </div>
+
+        <!-- Widget-1 end-->
+
+        <!-- Widget-2 end-->
+    </div> <!-- Row end-->
+
+
+    <!-- Row end-->
+
+
+    <!-- Row end-->
+
+
+
+                <div id="ajax-modal" class="modal container fade-scale" tabindex="-1" style="display: none;"></div>
+            </div>
+
+                            
+                            
+        </div>
+
+        <div id="right-sidebar">
+            <div class="sidebar-container">
+
+                <ul class="nav nav-tabs navs-3">
+
+                    <li class="active"><a data-toggle="tab" href="#tab-1">
+                            Notes
+                        </a></li>
+
+                    <li class=""><a data-toggle="tab" href="#tab-3">
+                            <i class="fa fa-gear"></i>
+                        </a></li>
+                </ul>
+
+                <div class="tab-content">
+
+
+                    <div id="tab-1" class="tab-pane active">
+
+                        <div class="sidebar-title">
+                            <h3> <i class="fa fa-file-text-o"></i> Quick Notes</h3>
+
+                        </div>
+
+                        <div style="padding: 10px">
+
+                            <form class="form-horizontal push-10-t push-10" method="post" onsubmit="return false;">
+
+                                <div class="form-group">
+                                    <div class="col-xs-12">
+                                        <div class="form-material floating">
+                                            <textarea class="form-control" id="ib_admin_notes" name="ib_admin_notes" rows="10"></textarea>
+                                            <label for="ib_admin_notes">What's on your mind?</label>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="col-xs-12">
+                                        <button class="btn btn-sm btn-success" type="submit" id="ib_admin_notes_save"><i class="fa fa-check"></i> Save</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+
+
+
+
+                    </div>
+
+
+                    <div id="tab-3" class="tab-pane">
+
+                        <div class="sidebar-title">
+                            <h3><i class="fa fa-gears"></i> Settings</h3>
+
+                        </div>
+
+                        <div class="setings-item">
+                            <h4>Theme Color</h4>
+
+                            <ul id="ib_theme_color" class="ib_theme_color">
+
+                                <li><a href="http://localhost/ibilling/?ng=settings/set_color/light/"><span class="light"></span></a></li>
+                                <li><a href="http://localhost/ibilling/?ng=settings/set_color/blue/"><span class="blue"></span></a></li>
+                                <li><a href="http://localhost/ibilling/?ng=settings/set_color/dark/"><span class="dark"></span></a></li>
+                            </ul>
+
+
+                        </div>
+                        <div class="setings-item">
+                    <span>
+                        Fold Sidebar by Default ?
+                    </span>
+                            <div class="switch">
+                                <div class="onoffswitch">
+                                    <input type="checkbox" name="r_fold_sidebar"  class="onoffswitch-checkbox" id="r_fold_sidebar">
+                                    <label class="onoffswitch-label" for="r_fold_sidebar">
+                                        <span class="onoffswitch-inner"></span>
+                                        <span class="onoffswitch-switch"></span>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+
+            </div>
+
+
+
+        </div>
+
+    </div>
+</section>
+<!-- BEGIN PRELOADER -->
+<input type="hidden" id="_url" name="_url" value="http://localhost/ibilling/?ng=">
+<input type="hidden" id="_df" name="_df" value="Y-m-d">
+<input type="hidden" id="_lan" name="_lan" value="en">
+<!-- END PRELOADER -->
+<!-- Mainly scripts -->
+
+
+<script>
+    var _L = [];
+
+
+    var app_url = 'http://localhost/ibilling/';
+    var base_url = 'http://localhost/ibilling/?ng=';
+
+        var config_animate = 'No';
+        
+_L['Working'] = 'Working';
+_L['Submit'] = 'Submit';
+ 
+</script>
+
+<script src="/Transcations/ibilling.js"></script>
+
+
+
+<script type="text/javascript" src="/Transcations/numeric.js"></script>
+        
+
+
+
+<script>
+    $(function () {
+        "use strict";
+        matForms();
+                
+
+ $('.amount').autoNumeric('init', {
+
+    aSign: '$ ',
+    dGroup: 3,
+    aPad: true,
+    pSign: 'p',
+    aDec: '.',
+    aSep: ','
+
+    });
+
+ 
+            });
+
+</script>
+</body>
+
+</html>
